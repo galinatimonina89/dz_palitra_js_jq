@@ -1,0 +1,127 @@
+*{
+    margin: auto;
+}
+body {
+    margin-top: 50px;
+    padding: 0;
+    height: auto;
+
+    max-width: 100%;
+    background: #f8efd6;
+}
+/*линейка*/
+.inner{
+    margin: 0 auto;
+    width: 1196px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.Tittle {
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 0px;
+}
+/*ввод цвета*/
+.inputClass {
+    /*height: 20px;*/
+    width: 280px;
+    margin-bottom: 20px;
+}
+/*выбор типа*/
+.typeClassSelector {
+    width: 100%;
+    height: 100%;
+}
+
+/*отправка формы save*/
+.submit {
+    width: 100%;
+    height: 100%;
+
+}
+/*обложка квадратиков*/
+.wrappers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+/*большой квадратик*/
+.wrappers-color {
+    width: 28%;
+    height: 120px;
+    margin: 20px;
+    display: flex;
+    z-index: 1;
+
+}
+.wrappers-color:nth-child(1){
+    background: yellowgreen;
+}
+.wrappers-color:nth-child(2){
+    background: darkcyan;
+
+
+}
+.wrappers-color:nth-child(3){
+    background: orangered;
+}
+.wrappers-color:nth-child(4) {
+
+}
+/*маленький квадратик*/
+.color-small span{
+    font-family: sans-serif;
+
+}
+.color-small span:nth-child(1){
+    font-size: 10px;
+    text-transform:uppercase;
+
+}
+.color-small span:nth-child(2){
+    font-size: 8px;
+
+}
+.color-small span:nth-child(3){
+    font-size: 11px;
+    font-weight: bold;
+}
+.color-small {
+    width: 180px;
+    height: 50px;
+    /*margin: auto;*/
+    z-index: 2;
+    display: grid;
+
+
+}
+.color-small__item1{
+    background: rgb(242, 242, 242);
+
+
+}
+.color-small__item2{
+    background: #71e8e8;
+}
+.color-small__item3 {
+    background: #ffb2ad;
+}
+/*стиль ошибки*/
+.color-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.color-box > label, .color-box > div{
+    margin: 0;
+}
+.color-box > div{
+    color: red;
+    text-align: right;
+}
+
